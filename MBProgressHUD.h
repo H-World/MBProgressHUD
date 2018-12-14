@@ -87,6 +87,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @interface MBProgressHUD : UIView
 
+/** default NO */
+@property (nonatomic, assign) BOOL isCloseUserInteraction;
+
 /**
  * Creates a new HUD, adds it to provided view and shows it. The counterpart to this method is hideHUDForView:animated:.
  *

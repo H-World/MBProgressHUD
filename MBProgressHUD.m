@@ -119,6 +119,13 @@ static const CGFloat MBDefaultDetailsLabelFontSize = 12.f;
     [self unregisterFromNotifications];
 }
 
+#pragma mark - UserInteraction
+
+- (void)setIsCloseUserInteraction:(BOOL)isCloseUserInteraction {
+    _isCloseUserInteraction = isCloseUserInteraction;
+    self.userInteractionEnabled = !isCloseUserInteraction;
+}
+
 #pragma mark - Show & hide
 
 - (void)showAnimated:(BOOL)animated {
